@@ -1,5 +1,6 @@
 #MAX_CHAR = 26
 
+
 def nonRep(s):
     freq = {}
     for i in s:
