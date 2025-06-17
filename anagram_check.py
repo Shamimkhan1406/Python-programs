@@ -1,20 +1,21 @@
-def isAnagram(s1,s2):
-    carCount = {}
-    for ch in s1:
-        carCount[ch] = carCount.get(ch, 0)+1
-    for ch in s2:
-        carCount[ch] = carCount.get(ch, 0)-1
-    for ch in carCount.values():
-        if ch != 0:
-            return False
-    #for ch in carCount:
-    #    if carCount[ch] != 0:
-    #        return False
-    return True
+class Solution:
+    def isAnagram(s1,s2):
+        carCount = {}
+        for ch in s1:
+            carCount[ch] = carCount.get(ch, 0)+1
+        for ch in s2:
+            carCount[ch] = carCount.get(ch, 0)-1
+        for ch in carCount.values():
+            if ch != 0:
+                return False
+        #for ch in carCount:
+        #    if carCount[ch] != 0:
+        #        return False
+        return True
 
 s1 = "listen"
 s2 = "silent"
-print(isAnagram(s1, s2))
+print(Solution.isAnagram(s1, s2))
 # Time Complexity: O(n)
 # Space Complexity: O(n) for the character count dictionary
 # This code checks if two strings are anagrams of each other.
