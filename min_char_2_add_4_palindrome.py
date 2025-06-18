@@ -1,3 +1,4 @@
+
 class solution:
     def lpsArray(s):
         n = len(s)
