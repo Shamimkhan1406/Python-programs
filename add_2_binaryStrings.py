@@ -1,3 +1,4 @@
+
 def treamLeadingZeros(s):
     firstOne = s.find('1')
     return s[firstOne:] if firstOne != -1 else '0'
