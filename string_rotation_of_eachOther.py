@@ -1,3 +1,4 @@
+
 #def stringRotationOrNot(s1,s2):
 #    conct = s1 + s2
 #    if s2 in conct:
